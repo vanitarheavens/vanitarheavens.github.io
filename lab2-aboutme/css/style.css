@@ -1,0 +1,32 @@
+section {
+    background-color: rgb(213, 221, 230);
+}
+
+h2 {
+color: white;
+background-color: blue
+}
+
+h3 {
+ font-family: sans-serif;
+}
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    /* float: left; */
+    width: 180px;
+  }
+
+.gallery:hover {
+    border: 1px solid #777;
+  }
+
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  a:hover { text-decoration:none; }
+
+  a:hover { text-decoration:underline; }
