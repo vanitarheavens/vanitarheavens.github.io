@@ -28,6 +28,11 @@ footer {
     color: white;
 }
 
+.subtitle {
+    text-decoration: underline;
+    margin: 20px 0px;
+}
+
 .must {
     color:red;
 }
