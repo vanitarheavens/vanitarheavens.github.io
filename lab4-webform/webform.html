@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script defer src="./js/webform2.js"></script>
+
+    <title>Web Form 2</title>
+</head>
+
+<body>
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1"
+                    data-toggle="collapse" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Workshop Registration</a>
+            <p class="navbar-brand" style="font-size: small">More Actions</p>
+        </div>
+
+    </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container">
+
+    <p><u>Register now while seats are available!</u></p>
+    <form id="productForm">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="firstName">First Name</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input class="form-control" id="firstName" name="firstName" placeholder="First Name"
+                                   required type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="lastName">Last Name</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input class="form-control" id="lastName" name="lastName" placeholder="Last Name"
+                                   required type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="company">Company/Institution</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input class="form-control" id="company" name="company" placeholder="Company/Institution"
+                                   required type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="address">Address</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                    <textarea rows="4" class="form-control" id="address" name="address" placeholder="Address"
+                              required type="text"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input class="form-control" id="city" name="city" placeholder="City"
+                                   required type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="state">State/Province/Region</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <select class="form-control" id="state" name="state">
+                                <option>-Select-</option>
+                                <option>Iowa</option>
+                                <option>Texas</option>
+                                <option>Illinois</option>
+                                <option>California</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="country">Country</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <select class="form-control" id="country">
+                                <option>-Select-</option>
+                                <option>USA</option>
+                                <option>Mexico</option>
+                                <option>Uganda</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email"
+                                   required type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="phoneNumber">Phone Number</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"
+                                   required type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="mealPreference">Meal Preference</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <select class="form-control" id="mealPreference">
+                                <option>Vegeterian</option>
+                                <option>Non-Vegeterian</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="paymentMode">Payment Mode</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input type="checkbox" id="paymentMode" name="cash" value="cash">
+                            <label for="paymentMode"> Cash</label><br>
+                            <input type="checkbox" id="cheque" name="cheque" value="cheque">
+                            <label for="paymentMode"> Cheque</label><br>
+                            <input type="checkbox" id="draft" name="draft" value="draft">
+                            <label for="paymentMode"> Demand draft</label><br><br>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="chequeNo">DD/Cheque No.</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input class="form-control" id="chequeNo" name="chequeNo" placeholder="DD/Cheque No."
+                                   required type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="bankName">Drawn On (Bank Name)</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input class="form-control" id="bankName" name="bankName" placeholder="Drawn On (Bank Name)"
+                                   required type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="payable">Payable at</label>
+                        </div>
+                        <div class="col-md-3 form-group">
+                            <input class="form-control" id="payable" name="payable" placeholder="Payable at"
+                                   required type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row footer-background-color" >
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <button class='btn green-btn' id="submit" name="button"
+                        type="submit">Submit
+                </button>
+                <button class='btn green-btn' id="reset" name="button"
+                        type="reset">Reset
+                </button>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-3"></div>
+
+
+        </div>
+
+
+    </form>
+
+</div>
+<footer class="footer" >
+    <div>
+        <a href="https://validator.w3.org/check?uri=https://vanitarheavens.github.io/lab4-webform/webform.html">
+            <img style="border:0;width:88px;height:31px" src="images/HTML-checker.png" alt="html-validator" />
+        </a>
+
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="images/css_checker.png" alt="css-validate" />
+        </a>
+
+        <div>
+            <div>Copyright &copy; 2021 vnanyonjo</div>
+        </div>
+    </div>
+</footer>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
