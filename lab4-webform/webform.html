@@ -41,7 +41,7 @@
                 <div class="col">
                     <div class="row">
                         <div class="col-md-3 form-group">
-                            <label for="firstName">First Name</label>
+                            <label for="firstName">First Name <span class="must">*</span></label>
                         </div>
                         <div class="col-md-3 form-group">
                             <input class="form-control" id="firstName" name="firstName" placeholder="First Name"
@@ -50,7 +50,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3 form-group">
-                            <label for="lastName">Last Name</label>
+                            <label for="lastName">Last Name <span class="must">*</span></label>
                         </div>
                         <div class="col-md-3 form-group">
                             <input class="form-control" id="lastName" name="lastName" placeholder="Last Name"
@@ -59,7 +59,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3 form-group">
-                            <label for="company">Company/Institution</label>
+                            <label for="company">Company/Institution <span class="must">*</span></label>
                         </div>
                         <div class="col-md-3 form-group">
                             <input class="form-control" id="company" name="company" placeholder="Company/Institution"
@@ -68,7 +68,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3 form-group">
-                            <label for="address">Address</label>
+                            <label for="address">Address <span class="must">*</span></label>
                         </div>
                         <div class="col-md-3 form-group">
                     <textarea rows="4" class="form-control" id="address" name="address" placeholder="Address"
@@ -91,10 +91,10 @@
                         <div class="col-md-3 form-group">
                             <select class="form-control" id="state" name="state">
                                 <option>-Select-</option>
-                                <option>Iowa</option>
-                                <option>Texas</option>
-                                <option>Illinois</option>
-                                <option>California</option>
+                                <option value="Iowa">Iowa</option>
+                                <option value="Texas">Texas</option>
+                                <option value="Illinois">Illinois</option>
+                                <option value="California">California</option>
                             </select>
                         </div>
                     </div>
@@ -104,16 +104,16 @@
                         </div>
                         <div class="col-md-3 form-group">
                             <select class="form-control" id="country">
-                                <option>-Select-</option>
-                                <option>USA</option>
-                                <option>Mexico</option>
-                                <option>Uganda</option>
+                                <option value="">-Select-</option>
+                                <option value="USA">USA</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Uganda">Uganda</option>
                             </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 form-group">
-                            <label for="email">Email</label>
+                            <label for="email">Email <span class="must">*</span></label>
                         </div>
                         <div class="col-md-3 form-group">
                             <input class="form-control" id="email" name="email" placeholder="Email"
@@ -122,7 +122,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3 form-group">
-                            <label for="phoneNumber">Phone Number</label>
+                            <label for="phoneNumber">Phone Number <span class="must">*</span></label>
                         </div>
                         <div class="col-md-3 form-group">
                             <input class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"
@@ -138,22 +138,22 @@
                         </div>
                         <div class="col-md-3 form-group">
                             <select class="form-control" id="mealPreference">
-                                <option>Vegeterian</option>
-                                <option>Non-Vegeterian</option>
+                                <option value="Vegeterian">Vegeterian</option>
+                                <option value="Non-Vegeterian">Non-Vegeterian</option>
                             </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-3 form-group">
-                            <label for="paymentMode">Payment Mode</label>
+                            <label>Payment Mode</label>
                         </div>
                         <div class="col-md-3 form-group">
-                            <input type="checkbox" id="paymentMode" name="cash" value="cash">
-                            <label for="paymentMode"> Cash</label><br>
+                            <input class="form-check-input" type="checkbox" id="cash" name="cash" value="cash">
+                            <label class="form-check-label" for="cash"> Cash</label><br>
                             <input type="checkbox" id="cheque" name="cheque" value="cheque">
-                            <label for="paymentMode"> Cheque</label><br>
+                            <label class="form-check-label" for="cheque"> Cheque</label><br>
                             <input type="checkbox" id="draft" name="draft" value="draft">
-                            <label for="paymentMode"> Demand draft</label><br><br>
+                            <label class="form-check-label" for="draft"> Demand draft</label><br><br>
 
                         </div>
                     </div>
