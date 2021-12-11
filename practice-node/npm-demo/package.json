@@ -1,0 +1,14 @@
+{
+  "name": "my_first_npm_demo",
+  "version": "1.0.0",
+  "description": "This is a demo to test npm coomands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
